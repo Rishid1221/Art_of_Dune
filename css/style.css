@@ -71,7 +71,7 @@ body {
 }
 
 .navbar-brand {
-  max-width: 120px;
+  max-width: 140px;
 }
 
 header {
@@ -2939,7 +2939,7 @@ textarea.inptFld{
   }
 
   .navbar-brand {
-    max-width: 70px;
+    max-width: 90px;
   }
 
   .bg-header {
@@ -3437,7 +3437,7 @@ header::after,
 /* Force dimensions & visibility for Logo Image */
 img.main-site-logo,
 .navbar-brand img {
-  height: 70px !important;      /* Explicit visible height */
+  height: 90px !important;      /* Explicit visible height */
   width: auto !important;        /* Maintains proper aspect ratio */
   max-width: 220px !important;
   object-fit: contain !important;
@@ -3749,4 +3749,34 @@ img.main-site-logo,
   .breadcrumb-banner .page-title {
     font-size: 2rem;
   }
+}
+
+
+
+/*  */
+
+/* Custom class with explicit overrides */
+.custom-ft-logo-circle {
+  width: 140px !important;
+  height: 140px !important;
+  max-width: none !important;
+  max-height: none !important;
+  border-radius: 50% !important;
+  border: 2px solid #d4a359 !important;
+  background-color: #fdfbfb !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  padding: 2px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+.custom-ft-logo-circle img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  display: block !important;
 }
