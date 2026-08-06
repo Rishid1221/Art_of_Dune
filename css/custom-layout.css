@@ -1,0 +1,242 @@
+/* =========================================================
+   CLEAN & ACCURATE LAYOUT FOR SUGNA DESERT SAFARI / ART OF DUNES
+   ========================================================= */
+
+/* Core Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', 'Segoe UI', Roboto, sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+/* --- 1. PROPER NAVBAR & HEADER FIX --- */
+.site-header {
+  position: relative !important; /* Forces header into standard document flow */
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand Logo */
+.brand-logo img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Navigation Menu */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease-in-out;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #d35400; /* Warm Accent Color */
+}
+
+/* Social Header Icons */
+.header-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.header-socials a {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.header-socials a:hover {
+  background: #d35400;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+
+/* --- 2. HERO / TITLE SECTION --- */
+.page-title-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/banner.jpg') center/cover no-repeat;
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.page-title-banner h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+/* --- 3. MAIN SECTION GRID & LAYOUT --- */
+.content-wrapper {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Alternating Card Sections (For Gadisagar, Bada Bagh, etc.) */
+.attraction-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  align-items: center;
+}
+
+.attraction-card.reverse {
+  direction: rtl;
+}
+
+.attraction-card.reverse .card-details {
+  direction: ltr;
+}
+
+.card-details {
+  padding: 2.5rem;
+}
+
+.card-details h2 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-details p {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Meta Data List (Visiting Times/Days) */
+.meta-info {
+  list-style: none;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.meta-info li {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.meta-info li i {
+  color: #d35400;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* --- 4. FLOATING STICKY WIDGETS (Call & WhatsApp) --- */
+.sticky-call-btn {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  background: #000;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sticky-whatsapp-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+  background: #25d366;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+
+
+/* --- 5. RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 992px) {
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .attraction-card,
+  .attraction-card.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .card-image img {
+    height: 250px;
+  }
+}
