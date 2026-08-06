@@ -3664,17 +3664,16 @@ img.main-site-logo,
 
 /* ==========================================
    Updated Breadcrumb Banner (Taller & Spaced)
-========================================== */
+========================================== *//* Dynamic Breadcrumb Banner */
 .breadcrumb-banner {
   position: relative;
-  background-image: url('../images/About/maharaj.jpg'); /* Replace with your banner image path */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   
-  /* --- Height & Spacing Increase --- */
-  padding: 130px 0; /* Increased top/bottom padding for more vertical height */
-  min-height: 380px; /* Gives a prominent, balanced hero banner height */
+  /* Height & Spacing */
+  padding: 130px 0;
+  min-height: 380px;
   display: flex;
   align-items: center;
   
@@ -3682,7 +3681,7 @@ img.main-site-logo,
   z-index: 1;
 }
 
-/* Darker Overlay to make white & gold text pop clearly */
+/* Darker Overlay Fix (Inline image ke upar layer set karne ke liye) */
 .breadcrumb-banner::before {
   content: "";
   position: absolute;
@@ -3690,8 +3689,14 @@ img.main-site-logo,
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.65); /* Darkened slightly so yellow text is fully readable */
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.65); /* Dark Overlay */
+  z-index: 1;
+}
+
+/* Text and Links Layer (Overlay ke upar visible rakhne ke liye) */
+.breadcrumb-banner .container {
+  position: relative;
+  z-index: 2;
 }
 
 /* Main Heading */
@@ -3705,7 +3710,7 @@ img.main-site-logo,
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Breadcrumb Navigation */
+/* Breadcrumb Navigation Links */
 .breadcrumb-banner .breadcrumb {
   background: transparent;
   padding: 0;
@@ -3713,30 +3718,14 @@ img.main-site-logo,
   font-size: 1.1rem;
 }
 
-/* Separator Icon (›) */
-.breadcrumb-banner .breadcrumb-item + .breadcrumb-item::before {
-  content: "›";
-  color: #f3a838; /* Bright desert gold */
-  padding: 0 10px;
-  font-weight: bold;
-}
-
-/* Home Link */
 .breadcrumb-banner .breadcrumb-item a {
-  color: #ffffff;
+  color: #d4a359;
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.breadcrumb-banner .breadcrumb-item a:hover {
-  color: #f3a838;
-}
-
-/* Active Page Title (Packages) */
-.breadcrumb-banner .breadcrumb-item.active {
-  color: #f3a838; /* Gold color for contrast */
   font-weight: 600;
+}
+
+.breadcrumb-banner .breadcrumb-item.active {
+  color: #ffffff;
 }
 
 /* Mobile Responsiveness */
@@ -3779,4 +3768,392 @@ img.main-site-logo,
   max-height: 100% !important;
   object-fit: contain !important;
   display: block !important;
+}
+
+
+
+
+/* ==========================================================================
+   ART OF DUNES CAMP - HEADER & HERO SLIDER CSS
+   ========================================================================== */
+
+/* --- Base Header Layout --- */
+.aod-site-header {
+  position: relative;
+  background-color: #0b0b0b;
+  width: 100%;
+  font-family: inherit;
+  z-index: 1000;
+}
+
+/* --- Top Bar Layout --- */
+.aod-top-bar {
+  background-color: #0e0d0d;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(212, 163, 89, 0.25);
+}
+
+.aod-top-bar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Circular Logo Badge */
+.aod-brand-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aod-logo-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #d4a359;
+  background-color: #fcf8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+}
+
+.aod-logo-circle:hover {
+  transform: scale(1.05);
+  border-color: #ffffff;
+}
+
+.aod-logo-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Center Brand Title */
+.aod-brand-title {
+  text-align: center;
+}
+
+.aod-brand-title .aod-title-main {
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.aod-brand-title .aod-title-sub {
+  color: #d4a359;
+  font-size: 0.85rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+/* Social Link Icons */
+.aod-social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aod-social-links a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 163, 89, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.aod-social-links a:hover {
+  border-color: #d4a359;
+  background-color: #d4a359;
+  transform: translateY(-2px);
+}
+
+.aod-social-links img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  border-radius: 50%;
+  display: block;
+}
+
+/* --- Navigation Bar --- */
+.aod-navbar {
+  background-color: #121212 !important;
+  border-bottom: 2px solid #d4a359 !important;
+  padding: 0 !important;
+}
+
+.aod-nav-list {
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+
+.aod-nav-list .nav-link {
+  color: #e0e0e0 !important;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 16px 16px !important;
+  text-transform: uppercase;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.aod-nav-list .nav-link:hover,
+.aod-nav-list .nav-link.active {
+  color: #d4a359 !important;
+  background-color: rgba(212, 163, 89, 0.08);
+}
+
+/* Custom Dropdown Menu */
+.aod-dropdown-menu {
+  background-color: #1a1a1a !important;
+  border: 1px solid #d4a359 !important;
+  border-radius: 4px;
+  padding: 8px 0 !important;
+  margin-top: 0 !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.aod-dropdown-menu .dropdown-item {
+  color: #d1d1d1 !important;
+  font-size: 0.88rem;
+  padding: 10px 20px !important;
+  transition: all 0.25s ease;
+  text-transform: capitalize;
+}
+
+.aod-dropdown-menu .dropdown-item:hover {
+  background-color: #d4a359 !important;
+  color: #000000 !important;
+}
+
+/* Mobile Toggler Button */
+.aod-toggler {
+  border: 1px solid #d4a359 !important;
+  background-color: #0e0d0d !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 4px;
+}
+
+.aod-toggler-label {
+  color: #d4a359;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Custom Gold SVG Hamburger Icon */
+.aod-toggler .navbar-toggler-icon.aod-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(212, 163, 89, 1)' stroke-width='2.5' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+  width: 1.3em;
+  height: 1.3em;
+}
+
+/* --- Hero Slider --- */
+.aod-hero-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.aod-slide-item {
+  height: 75vh;
+  min-height: 480px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aod-caption {
+  text-align: center;
+  color: #ffffff;
+}
+
+.aod-subtitle {
+  color: #d4a359;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.aod-title {
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* --- Responsive Styles (< 991px Mobile / Tablet) --- */
+@media (max-width: 991.98px) {
+  .aod-top-bar-wrapper {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .aod-logo-circle {
+    width: 65px !important;
+    height: 65px !important;
+  }
+
+  .aod-brand-title .aod-title-main {
+    font-size: 1.2rem !important;
+  }
+
+  .aod-brand-title .aod-title-sub {
+    font-size: 0.75rem !important;
+  }
+
+  .aod-social-links a {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .aod-social-links img {
+    width: 15px !important;
+    height: 15px !important;
+  }
+
+  .aod-nav-list {
+    padding: 10px 0 !important;
+    text-align: center;
+  }
+
+  .aod-nav-list .nav-link {
+    padding: 10px 0 !important;
+    border-bottom: 1px solid rgba(212, 163, 89, 0.12);
+  }
+
+  .aod-dropdown-menu {
+    text-align: center;
+    background-color: #0b0b0b !important;
+    border: none !important;
+  }
+
+  .aod-slide-item {
+    height: 55vh;
+    min-height: 360px;
+  }
+
+  .aod-subtitle {
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+  }
+
+  .aod-title {
+    font-size: 1.75rem;
+  }
+}
+
+
+
+/* ==========================================================================
+   MOBILE & DROPDOWN MENU COLOR FIX (DARK BACKGROUND & HIGH CONTRAST TEXT)
+   ========================================================================== */
+
+/* Navbar collapse background fix for mobile */
+.aod-navbar .navbar-collapse,
+#aodNavContent {
+  background-color: #121212 !important;
+  padding: 10px 0;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Nav links color fix */
+.aod-nav-list .nav-link {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-align: center;
+}
+
+.aod-nav-list .nav-link:hover,
+.aod-nav-list .nav-link.active {
+  color: #d4a359 !important;
+  background-color: rgba(212, 163, 89, 0.15) !important;
+}
+
+/* Dropdown menu background & text fix */
+.aod-dropdown-menu {
+  background-color: #1a1a1a !important;
+  border: 1px solid #d4a359 !important;
+}
+
+.aod-dropdown-menu .dropdown-item {
+  color: #e0e0e0 !important;
+  font-weight: 500;
+}
+
+.aod-dropdown-menu .dropdown-item:hover {
+  background-color: #d4a359 !important;
+  color: #000000 !important;
+}
+
+/* Mobile Divider Line Fix */
+@media (max-width: 991.98px) {
+  .aod-nav-list .nav-item {
+    border-bottom: 1px solid rgba(212, 163, 89, 0.2);
+  }
+  
+  .aod-nav-list .nav-item:last-child {
+    border-bottom: none;
+  }
+}
+
+
+  /* Quick fix for older legacy headers on inner pages */
+header.main-global-header,
+.site-header {
+  background-color: #0b0b0b !important;
+}
+
+header.main-global-header .navbar,
+.site-header .navbar {
+  background-color: #121212 !important;
+}
+
+header.main-global-header .navbar-collapse,
+.site-header .navbar-collapse {
+  background-color: #121212 !important;
+}
+
+header.main-global-header .nav-link,
+.site-header .nav-link {
+  color: #ffffff !important;
+}
+
+header.main-global-header .nav-link:hover,
+header.main-global-header .nav-link.active {
+  color: #d4a359 !important;
 }

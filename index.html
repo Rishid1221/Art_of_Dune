@@ -14,7 +14,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<!-- Bootstrap 5 JS Bundle (Includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
@@ -35,33 +36,39 @@
 
 <body>
   <!-- HEADER SECTION -->
-<header class="site-header">
+<header class="aod-site-header">
   
-  <!-- TOP BAR: Logo + Social Icons -->
-  <div class="top-bar">
+  <!-- TOP BAR & MOBILE HEADER -->
+  <div class="aod-top-bar">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center py-2">
+      <div class="aod-top-bar-wrapper">
         
-        <!-- Logo -->
-      <!-- Circular Logo Wrapper Adjustment inside Top Bar -->
-<a class="navbar-brand m-0 logo-circle-badge" href="index.html">
-  <img src="images/logo.png" alt="Logo" class="site-logo" />
-</a>
+        <!-- Left: Logo -->
+        <div class="aod-brand-logo">
+          <a href="index.html" class="aod-logo-circle">
+            <img src="images/logo.png" alt="Art of Dunes Camp Logo">
+          </a>
+        </div>
 
-        <!-- Social Icons -->
-        <div class="social-links d-flex gap-3 align-items-center">
-          <a href="https://www.facebook.com/profile.php?id=100091669342793" target="_blank" rel="noopener">
-            <img src="images/Home/icons/facebook.png" alt="Facebook" />
+        <!-- Center: Title -->
+        <div class="aod-brand-title text-center">
+          <h1 class="aod-title-main">ART OF DUNES CAMP</h1>
+          <span class="aod-title-sub">JAISALMER</span>
+        </div>
+
+        <!-- Right: Social Links -->
+        <div class="aod-social-links">
+          <a href="https://www.facebook.com/profile.php?id=100091669342793" target="_blank" rel="noopener" title="Facebook">
+            <img src="images/Home/icons/facebook.png" alt="Facebook">
           </a>
-          <!-- Header Social Link Update -->
-<a href="https://wa.me/916378589299?text=Hi%20sugna%20desert%20safari,%20I%20want%20to%20know%20more%20about%20your%20camp" target="_blank">
-  <img src="images/Home/icons/whatsapp.png" alt="WhatsApp" />
-</a>
-          <a href="#">
-            <img src="images/Home/icons/instagram.png" alt="Instagram" />
+          <a href="https://wa.me/916376977737?text=Hi%20sugna%20desert%20safari,%20I%20want%20to%20know%20more%20about%20your%20camp" target="_blank" rel="noopener" title="WhatsApp">
+            <img src="images/Home/icons/whatsapp.png" alt="WhatsApp">
           </a>
-          <a href="https://www.snapchat.com/add/sugnadesert99?share_id=_pdP9Lv08Js&locale=en-IN" target="_blank" rel="noopener">
-            <img src="images/Home/icons/Snapchat-logo.jpg" alt="Snapchat" />
+          <a href="#" title="Instagram">
+            <img src="images/Home/icons/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.snapchat.com/add/sugnadesert99?share_id=_pdP9Lv08Js&locale=en-IN" target="_blank" rel="noopener" title="Snapchat">
+            <img src="images/Home/icons/Snapchat-logo.jpg" alt="Snapchat">
           </a>
         </div>
 
@@ -70,77 +77,82 @@
   </div>
 
   <!-- NAVIGATION BAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark site-nav">
-    <div class="container">
-      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+ <!-- NAVIGATION BAR -->
+<nav class="navbar navbar-expand-lg aod-navbar">
+  <div class="container">
+    
+    <!-- Mobile Hamburger Toggle Button (Desktop par hidden rehega) -->
+    <button class="navbar-toggler aod-toggler w-100 py-2 my-1 d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#aodNavContent" aria-controls="aodNavContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="aod-toggler-label">MENU</span>
+      <span class="navbar-toggler-icon aod-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
-        <ul class="navbar-nav gap-lg-3">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="why-jaisalmer.html">Why Jaisalmer</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="adventure.html">Adventures</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Packages
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="maharaja-package.html" target="_blank">Maharaja Packages</a></li>
-              <li><a class="dropdown-item" href="maharani-package.html" target="_blank">Maharani Luxury AC Tent</a></li>
-              <li><a class="dropdown-item" href="yuvraj-package.html" target="_blank">Yuvraj Super Deluxe Tent</a></li>
-              <li><a class="dropdown-item" href="mobile-tent.html" target="_blank">Soldier Mobile Tent</a></li>
-              <li><a class="dropdown-item" href="royal-odc.html" target="_blank">Royal ODC (Day Safari)</a></li>
-              <li><a class="dropdown-item" href="rajasthani-dance-dinner.html" target="_blank">Rajasthani Dance & Dinner</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="events.html">Events & Tour</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse justify-content-center" id="aodNavContent">
+      <ul class="navbar-nav aod-nav-list">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="why-jaisalmer.html">Why Jaisalmer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="adventure.html">Adventures</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aodPackagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Packages
+          </a>
+          <ul class="dropdown-menu aod-dropdown-menu" aria-labelledby="aodPackagesDropdown">
+            <li><a class="dropdown-item" href="maharaja-package.html" target="_blank">Maharaja Packages</a></li>
+            <li><a class="dropdown-item" href="maharani-package.html" target="_blank">Maharani Luxury AC Tent</a></li>
+            <li><a class="dropdown-item" href="yuvraj-package.html" target="_blank">Yuvraj Super Deluxe Tent</a></li>
+            <li><a class="dropdown-item" href="mobile-tent.html" target="_blank">Soldier Mobile Tent</a></li>
+            <li><a class="dropdown-item" href="royal-odc.html" target="_blank">Royal ODC (Day Safari)</a></li>
+            <li><a class="dropdown-item" href="rajasthani-dance-dinner.html" target="_blank">Rajasthani Dance & Dinner</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Events & Tour</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+
+  </div>
+</nav>
 
   <!-- HERO SLIDER SECTION -->
-  <div class="hero-slider">
+  <div class="aod-hero-slider">
     <div class="owl-carousel owl-theme" id="header-carousel">
       
       <div class="item">
-        <div class="hero-slide-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url('images/Home/bg-1.jpg');">
-          <div class="hero-caption container">
-            <span class="hero-subtitle">Art Of Dunes Camp</span>
-            <h1 class="hero-title">Feel and Enjoy the Sand Dunes &amp; Desert</h1>
+        <div class="aod-slide-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('images/Home/bg-1.jpg');">
+          <div class="aod-caption container">
+            <span class="aod-subtitle">Art Of Dunes Camp</span>
+            <h2 class="aod-title">Feel and Enjoy the Sand Dunes & Desert</h2>
           </div>
         </div>
       </div>
 
       <div class="item">
-        <div class="hero-slide-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url('images/Home/bg-2.jpg');">
-          <div class="hero-caption container">
-            <span class="hero-subtitle">Art of Dunes Camp</span>
-            <h2 class="hero-title">Feel and Enjoy the Sand Dunes &amp; Desert</h2>
+        <div class="aod-slide-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('images/Home/bg-2.jpg');">
+          <div class="aod-caption container">
+            <span class="aod-subtitle">Art of Dunes Camp</span>
+            <h2 class="aod-title">Experience Unmatched Desert Luxury</h2>
           </div>
         </div>
       </div>
 
       <div class="item">
-        <div class="hero-slide-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url('images/Home/bg-4.jpg');">
-          <div class="hero-caption container">
-            <span class="hero-subtitle">Luxury Experience</span>
-            <h2 class="hero-title">Feel and Enjoy the Sand Dunes &amp; Desert</h2>
+        <div class="aod-slide-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('images/Home/bg-4.jpg');">
+          <div class="aod-caption container">
+            <span class="aod-subtitle">Luxury Experience</span>
+            <h2 class="aod-title">Authentic Rajasthani Hospitality</h2>
           </div>
         </div>
       </div>
@@ -659,8 +671,8 @@
           <div class="footer-block-1">
             <h4 class="text-white mb-1">Art of Dunes Camp</h4>
             <p class="text-white">Address: Khasra No. 915/621, Ground Floor, Near Salkha Branch Post Office, Village Salkha, Tehsil Sam, Jaisalmer, Rajasthan (345001)</p>
-            <p>Email address:<a href="mailto:sugnadesertsafari99@gmail.com"> sugnadesertsafari99@gmail.com</a></p>
-            <p><b>Vishal Gaur</b>&nbsp;&nbsp;&nbsp;6378589299</p>
+            <p>Email address:<a href="mailto:artofdunescamps@gmai.com"> artofdunescamps@gmai.com</a></p>
+            <p><b>Kuldeep Singh Rathore</b>&nbsp;&nbsp;&nbsp;6376977737</p>
           </div>
         </div>
        
@@ -675,7 +687,7 @@
 <div class="social-connect">
   <ul class="footer-list-2 w-100 pl-0">
     <li class="footer-list-item list-unstyled">
-      <a href="https://wa.me/916378589299?text=Hi%20sugna%20desert%20safari,%20I%20want%20to%20know%20more%20about%20your%20camp" 
+      <a href="https://wa.me/916376977737?text=Hi%20sugna%20desert%20safari,%20I%20want%20to%20know%20more%20about%20your%20camp" 
          target="_blank" 
          class="footer-list-link" 
          title="Chat on WhatsApp">
@@ -688,11 +700,11 @@
 <!-- FLOATING CALL BUTTON -->
 <div class="call-sugna-desert-safari">
   <div class="reservation">
-    <a href="tel:+916378589299">
+    <a href="tel:+916376977737">
       <div class="icon d-flex justify-content-center align-items-center">
         <i class="fa fa-phone" aria-hidden="true"></i>
       </div>
-      <div class="call"><span>+916378589299</span><br>Reservation</div>
+      <div class="call"><span>+916376977737</span><br>Reservation</div>
     </a>
   </div>
 </div>  
