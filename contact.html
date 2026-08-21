@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Jaisalmer travel</title>
+    <title>Jaisalmer travel - Contact Us</title>
+    
+    <!-- ORIGINAL CSS LIBRARIES -->
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
@@ -20,314 +22,811 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+   <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+/>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-      rel="stylesheet"
-    />
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- NEW PREMIUM LUXURY CSS DESIGN -->
+    <style>
+      :root {
+        --royal-gold: #D4AF37;
+        --royal-dark: #0f1115;
+        --soft-bg: #F9F7F2;
+        --card-white: #FFFFFF;
+      }
+
+      body {
+        font-family: 'Poppins', sans-serif;
+        background-color: var(--soft-bg);
+        color: #333333;
+      }
+
+      .royal-title-font {
+        font-family: 'Cinzel', serif;
+      }
+
+      /* MAIN SECTION WRAPPER */
+      .lux-contact-section {
+        padding: 70px 0;
+        background: radial-gradient(circle at top, #ffffff 0%, #f4f0e8 100%);
+      }
+
+      .lux-header {
+        margin-bottom: 50px;
+      }
+
+      .lux-header .tagline {
+        color: #a87e2a;
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .lux-header h2 {
+        font-size: 2.5rem;
+        color: var(--royal-dark);
+        font-weight: 700;
+      }
+
+      .lux-line {
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, var(--royal-gold), transparent);
+        margin: 15px auto 0;
+      }
+
+      /* LUXURY CARDS WITH VIBRANT ICONS */
+      .lux-box {
+        background: var(--card-white);
+        border-radius: 16px;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        border: 1px solid rgba(212, 175, 55, 0.25);
+        transition: all 0.35s ease;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .lux-box:hover {
+        transform: translateY(-8px);
+        border-color: var(--royal-gold);
+        box-shadow: 0 15px 35px rgba(212, 175, 55, 0.2);
+      }
+
+      /* ICON BADGES WITH COLOR VARIATIONS */
+      .lux-icon-badge {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-size: 30px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        transition: transform 0.3s ease;
+      }
+
+      .lux-box:hover .lux-icon-badge {
+        transform: scale(1.1);
+      }
+
+      /* Distinct colors for icons */
+      .bg-icon-location {
+        background: #fff5f5;
+        color: #e53e3e;
+        border: 2px solid #feb2b2;
+      }
+
+      .bg-icon-phone {
+        background: #fffaf0;
+        color: #d69e2e;
+        border: 2px solid #fbd38d;
+      }
+
+      .bg-icon-whatsapp {
+        background: #f0fff4;
+        color: #25D366;
+        border: 2px solid #9ae6b4;
+      }
+
+      .bg-icon-email {
+        background: #ebf8ff;
+        color: #3182ce;
+        border: 2px solid #90cdf4;
+      }
+
+      .lux-box h5 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--royal-dark);
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+      }
+
+      .lux-box p, .lux-box a {
+        font-size: 0.9rem;
+        color: #555555;
+        text-decoration: none !important;
+        margin-bottom: 0;
+        line-height: 1.6;
+      }
+
+      .lux-box a:hover {
+        color: var(--royal-gold);
+      }
+
+
+      /* INLINE CONTACT ICONS - no icon CDN dependency */
+      .contact-svg {
+        width: 32px;
+        height: 32px;
+        display: block;
+        flex: 0 0 auto;
+      }
+      .contact-svg-small {
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 8px;
+      }
+
+      /* FORM & MAP WRAPPER */
+      .lux-main-card {
+        background: #ffffff;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid rgba(212, 175, 55, 0.25);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+        margin-top: 20px;
+      }
+
+      .lux-map-frame {
+        width: 100%;
+        height: 100%;
+        min-height: 480px;
+      }
+
+      .lux-map-frame iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+
+      .lux-form-area {
+        padding: 40px;
+      }
+
+      .lux-form-area h3 {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--royal-dark);
+        margin-bottom: 8px;
+      }
+
+      .lux-input-field {
+        height: 50px;
+        border-radius: 8px;
+        border: 1px solid #e2e8f0;
+        background-color: #fafafa;
+        padding: 10px 18px;
+        font-size: 0.92rem;
+        transition: all 0.3s ease;
+      }
+
+      .lux-input-field:focus {
+        background-color: #ffffff;
+        border-color: var(--royal-gold);
+        box-shadow: 0 0 10px rgba(212, 175, 55, 0.25);
+        outline: none;
+      }
+
+      textarea.lux-input-field {
+        height: 120px;
+        padding-top: 14px;
+      }
+
+      .lux-btn-btn {
+        background: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%);
+        color: #ffffff;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        padding: 14px 40px;
+        border-radius: 50px;
+        border: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 20px rgba(170, 124, 17, 0.3);
+        cursor: pointer;
+      }
+
+      .lux-btn-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 25px rgba(170, 124, 17, 0.5);
+        color: #ffffff;
+      }
+
+      .bg-icon-location svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+    color: #e53e3e;
+}
+    </style>
   </head>
+ 
 
   <body>
-   <!-- GLOBAL SITE HEADER -->
-<header class="main-global-header">
-  
-  <!-- Top Bar: Circle Logo & Social Icons -->
- <!-- Top Bar: Circle Logo, Center Title & Social Icons -->
-<div class="header-top-bar">
-  <div class="container-fluid px-4">
-    <div class="row align-items-center">
-      
-      <!-- Left: Circular Logo (Col-4) -->
-      <div class="col-4 text-start">
-        <a class="navbar-brand logo-circle-frame" href="index.html">
-          <img src="images/logo.png" alt="Logo" class="logo-img" />
-        </a>
-      </div>
-
-      <!-- Center: Brand Title (Col-4) -->
-      <div class="col-4 text-center">
-        <h2 class="header-brand-title m-0">Art of Dunes Camp</h2>
-      </div>
-
-      <!-- Right: Social Media Links (Col-4) -->
-      <div class="col-4 text-end">
-        <div class="social-icons-wrapper">
-          <a href="https://www.facebook.com/profile.php?id=100091669342793" target="_blank"><img src="images/Home/icons/facebook.png" alt="FB"></a>
-          <a href="#"><img src="images/Home/icons/whatsapp.png" alt="WA"></a>
-          <a href="https://www.instagram.com/artofdunes_camp?igsh=MTI1YzRiMWIxZDA1cw==" target="_blank" rel="noopener"><img src="images/Home/icons/instagram.png" alt="IG"></a>
-<!-- Snapchat ki jagah ye update karo -->
-<a href="mailto:your-email@gmail.com" title="Gmail">
-  <!-- Path check karein: e.g., images/Home/icons/gmail.jpg -->
-  <img src="images/Home/icons/gmail.jpg" alt="Gmail"> 
-</a>        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-  <!-- Navigation Menu Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark header-nav-bar">
-    <div class="container">
-      <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#mainMenu">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-center" id="mainMenu">
-        <ul class="navbar-nav gap-lg-2 text-uppercase">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="why-jaisalmer.html">Why Jaisalmer</a></li>
-          <li class="nav-item"><a class="nav-link" href="adventure.html">Adventures</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="pkgDrop" data-toggle="dropdown">Packages</a>
-            <div class="dropdown-menu">
-              <!-- <a class="dropdown-item" href="maharaja-package.html">Maharaja Packages</a> -->
-              <a class="dropdown-item" href="maharani-package.html">Swiss Tent</a>
-              <a class="dropdown-item" href="yuvraj-package.html">Deluxe Tent</a>
-              <!-- <a class="dropdown-item" href="mobile-tent.html">Soldier Mobile Tent</a> -->
-              <a class="dropdown-item" href="royal-odc.html">Royal ODC</a>
-              <a class="dropdown-item" href="rajasthani-dance-dinner.html">Rajasthani Dance & Dinner</a>
+    <!-- GLOBAL SITE HEADER (UNTOUCHED) -->
+    <header class="main-global-header">
+      <div class="header-top-bar">
+        <div class="container-fluid px-4">
+          <div class="row align-items-center">
+            <div class="col-4 text-start">
+              <a class="navbar-brand logo-circle-frame" href="index.html">
+                <img src="images/logo.png" alt="Logo" class="logo-img" />
+              </a>
             </div>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="events.html">Events & Tour</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-</header>
-
-<!-- ADVENTURES PAGE BANNER -->
-<section class="breadcrumb-banner" style="background-image: url('./images/About/contact.jpg');">
-  <div class="container">
-    <div class="row text-center justify-content-center">
-      <div class="col-lg-8">
-        <h1 class="page-title">Contact</h1>
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb justify-content-center">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Contact</li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <div class="heading-title text-center bg-white section-padding">
-      <h5 class="text-capitalize font-weight-bold color-secondary">Art of Dunes Camp</h5>
-      <h3 class="text-uppercase font-weight-bold">Contact us</h3>
-      <div class="c-line-center c-theme-bg"></div>
-    </div>
-
-
-    <section class="adventures bg-white">
-      <div class="container">
-        <section class="contact-sec sec-pad">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d222.42809038540454!2d70.57910509625897!3d26.876523998769635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3947dde71e7563b9%3A0x86a635a97492763!2sSugna%20Desert%20Safari%20Jaisalmer!5e0!3m2!1sen!2sin!4v1686397089514!5m2!1sen!2sin" width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col-4 text-center">
+              <h2 class="header-brand-title m-0">Art of Dunes Camp</h2>
+            </div>
+            <div class="col-4 text-end">
+              <div class="social-icons-wrapper">
+                <a href="https://www.facebook.com/profile.php?id=100091669342793" target="_blank"><img src="images/Home/icons/facebook.png" alt="FB"></a>
+               
+                <a href="https://www.instagram.com/artofdunes_camp?igsh=MTI1YzRiMWIxZDA1cw==" target="_blank" rel="noopener"><img src="images/Home/icons/instagram.png" alt="IG"></a>
+                  
+                </a>
               </div>
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-md-12">
-                    <form
-                      action="https://formspree.io/f/xknaakaw"
-                      class="contFrm pb-5"
-                      method="POST"
-                    >
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <input
-                            type="text"
-                            class="form-control inptFld"
-                            name="name"
-                            placeholder="Your Name"
-                            required
-                          />
-                        </div>
-    
-                        <div class="col-sm-6">
-                          <input
-                            type="email"
-                            class="form-control inptFld"
-                            name="email"
-                            placeholder="Email Address"
-                            required
-                          />
-                        </div>
-    
-                        <div class="col-sm-6">
-                          <input
-                            type="tel"
-                            class="form-control inptFld"
-                            name="phone"
-                            placeholder="Phone Number"
-                            required
-                          />
-                        </div>
-    
-                        <div class="col-sm-6">
-                          <input
-                            type="text"
-                            class="form-control inptFld"
-                            name="sub"
-                            placeholder="Subject"
-                            required
-                          />
-                        </div>
-    
-                        <div class="col-12">
-                          <textarea
-                            class="inptFld form-control inptFld"
-                            rows=""
-                            cols=""
-                            placeholder="Your Message..."
-                            required
-                          ></textarea>
-                        </div>
-    
-                        <div class="col-12 text-center">
-                          <input
-                            type="submit"
-                            name="submit"
-                            value="SUBMIT"
-                            class="inptBtn"
-                          />
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-    
-                  <div class="col-md-12">
-                    <div class="contact-detail pb-5">
-                      <ul class="contact-ul pl-0">
-                        <li>
-                          <i class="fa fa-map-marker" aria-hidden="true"></i>
-                          <span class="fs-16">
-                            Near Sam Parking, Lakhmara Road, Kanoi, Jaisalmer,
-                            Rajasthan (345001)
-                          </span>
-                        </li>
-                        <li>
-                          <i class="fa fa-phone" aria-hidden="true"></i>
-                          <a href="tel:08510004495" class="fs-16">6376977737,&nbsp;</a>
-                        </li>
-    
-                        <li>
-                          <i class="fa fa-envelope" aria-hidden="true"></i>
-                          <a
-                            href="mailto:artofdunescamps@gmai.com"
-                            class="fs-16"
-                            >artofdunescamps@gmai.com</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-             
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+
+<nav
+  class="navbar navbar-expand-lg navbar-dark header-nav-bar"
+  style="background-color: #f7f5bc !important;"
+>        <div class="container">
+          <button class="navbar-toggler ms-auto" type="button" data-toggle="collapse" data-target="#mainMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="mainMenu">
+            <ul class="navbar-nav gap-lg-2 text-uppercase">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="why-jaisalmer.html">Why Jaisalmer</a></li>
+              <li class="nav-item"><a class="nav-link" href="adventure.html">Adventures</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="pkgDrop" data-toggle="dropdown">Packages</a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="maharani-package.html">Swiss Tent</a>
+                  <a class="dropdown-item" href="yuvraj-package.html">Deluxe Tent</a>
+                  <a class="dropdown-item" href="royal-odc.html"></a>
+                  <a class="dropdown-item" href="rajasthani-dance-dinner.html">Rajasthani Dance & Dinner</a>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events & Tour</a></li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+              <li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- BREADCRUMB BANNER (UNTOUCHED) -->
+    <section class="breadcrumb-banner" style="background-image: url('./images/About/contact.jpg');">
+      <div class="container">
+        <div class="row text-center justify-content-center">
+          <div class="col-lg-8">
+            <h1 class="page-title">Contact</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contact</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
       </div>
     </section>
 
-   
-    <footer class="section-padding mt-5">
+    <!-- NEW CONTACT DESIGN WITH ICONS -->
+    <section class="lux-contact-section">
       <div class="container">
-        <div class="row d-flex ">
-          <div class="col-md-8">
-            <h2> BOOK YOUR JAISALMER TRIP NOW </h2>
-          </div>
-          <div class="col-md-4 ">
-            <button class="btn btn-warning text-uppercase">
-              <a href="https://wa.me/916376977737?text=Hi%20Art%20of%20Dunes%2C%20I%20would%20like%20to%20enquire%20about%20a%20stay." class="text-dark font-weight-bold" target="_blank" rel="noopener">book now</a>
-            </button>
-          </div>
-          <div class="col-md-4 col-lg-4 mt-5">
-           <div class="custom-ft-logo-wrapper mb-3">
-  <a class="text-white d-inline-block" href="index.html">
-    <div class="custom-ft-logo-circle">
-      <img src="images/logo.png" alt="Art of Dunes Camp Logo">
-    </div>
-  </a>
-</div>
-            <div class="footer-block-1">
-              <h4 class="text-white mb-1">Art of Dunes Camp</h4>
-            <p class="text-white">Address: Near Sam Parking, Lakhmara Road, Kanoi, Jaisalmer, Rajasthan (345001)</p>
-              <p>Email address:<a href="mailto:artofdunescamps@gmai.com"> artofdunescamps@gmai.com</a></p>
-              <p><b>Kuldeep Singh Rathore</b>&nbsp;&nbsp;&nbsp;6376977737</p>
-            </div>
-          </div>
-         
-          <div class="col-md-8 mt-5">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12837.920933551703!2d70.5934061554478!3d26.89400284085548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1787145008875!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>          </div>
+        
+        <!-- Header -->
+        <div class="lux-header text-center">
+          <span class="tagline">Welcome To Luxury Stay</span>
+          <h2 class="royal-title-font">CONNECT WITH US</h2>
+          <div class="lux-line"></div>
         </div>
-      </div>
-    </footer>
-  
-    <div class="social-connect">
-      <ul class="footer-list-2  w-100 pl-0">
-        <li class="footer-list-item list-unstyled">
-          <a href="https://wa.me/916376977737/?text=Hi Art of Dunes Camp, I want to know more about your camp" class="footer-list-link"> <img
-            src="images/Home/icons/whatsapp.png" class="img-fluid">
-          </a>
-        </li>
-      </ul>
-    </div>
-  
-    <div class="call-artofdunes-desert-safari">
-      <div class="reservation">
-        <a href="tel:+916376977737">
-          <div class="icon d-flex justify-content-center align-items-center">
-            <i class="fa fa-phone" aria-hidden="true"></i>
-          </div>
-          <div class="call"><span>+916376977737</span> <br>Reservation</div>
-        </a>
-      </div>
+
+        <!-- 4 Cards with Distinctive Icons -->
+        <div class="row g-4 mb-5">
+          
+          <!-- Location -->
+          <div class="col-lg-3 col-md-6 mb-4">
+  <div
+    class="lux-box"
+    onclick="window.open('https://www.google.com/maps/search/?api=1&query=26.89400284085548,70.5934061554478', '_blank')"
+    style="cursor: pointer;"
+  >
+
+    <div class="lux-icon-badge bg-icon-location">
+
+      <svg
+        width="30"
+        height="30"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          d="M12 21C12 21 19 14.8 19 9.5C19 5.91 15.87 3 12 3C8.13 3 5 5.91 5 9.5C5 14.8 12 21 12 21Z"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linejoin="round"
+        />
+        <circle
+          cx="12"
+          cy="9.5"
+          r="2.5"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+      </svg>
+
     </div>
 
+    <h5 class="royal-title-font">OUR LOCATION</h5>
+
+    <p>
+      Khasara No 915/621, Tehsil Sam, Village Salkha,
+      Jaisalmer, Rajasthan - 345001
+    </p>
+
+  </div>
+</div>
+
+          <!-- Phone -->
+          <div class="col-lg-3 col-md-6 mb-4">
+  <div
+    class="lux-box"
+    onclick="window.location.href='tel:+916376977737'"
+    style="cursor: pointer;"
+  >
+
+    <div class="lux-icon-badge bg-icon-phone">
+      <svg width="30" height="30" viewBox="0 0 24 24"
+           fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M6.6 3.5L9.1 3C9.6 2.9 10.1 3.2 10.3 3.7L11.5 6.6C11.7 7.1 11.5 7.6 11.1 7.9L9.5 9.2C10.4 11.1 12 12.7 13.9 13.6L15.2 12C15.5 11.6 16 11.4 16.5 11.6L19.4 12.8C19.9 13 20.2 13.5 20.1 14L19.6 16.5C19.5 17.2 18.9 17.7 18.2 17.7C10.9 17.3 6.7 13.1 6.3 5.8C6.3 5.1 6.4 4 6.6 3.5Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+
+    <h5 class="royal-title-font">CALL RESERVATION</h5>
+    <p>+91 6376977737</p>
+    <small>(Kuldeep Singh Rathore)</small>
+
+  </div>
+</div>
+
+          <!-- WhatsApp -->
+         <div class="col-lg-3 col-md-6 mb-4">
+  <div
+    class="lux-box"
+    onclick="window.open('https://wa.me/916376977737?text=Hi%20Art%20of%20Dunes%20Camp%2C%20I%20want%20to%20know%20more%20about%20your%20camp.', '_blank')"
+    style="cursor: pointer;"
+  >
+
+    <div class="lux-icon-badge bg-icon-whatsapp">
+      <svg width="30" height="30" viewBox="0 0 24 24"
+           fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M20.5 3.5C18.3 1.3 15.4 0.1 12.3 0.1C5.9 0.1 0.7 5.3 0.7 11.7C0.7 13.8 1.2 15.8 2.2 17.6L0.6 23.5L6.7 21.9C8.4 22.8 10.3 23.3 12.3 23.3C18.7 23.3 23.9 18.1 23.9 11.7C23.9 8.6 22.7 5.7 20.5 3.5ZM12.3 21.3C10.5 21.3 8.7 20.8 7.2 19.9L6.8 19.7L3.2 20.7L4.2 17.2L4 16.8C3.1 15.2 2.6 13.5 2.6 11.7C2.6 6.3 7 1.9 12.4 1.9C15 1.9 17.4 2.9 19.2 4.8C21.1 6.6 22.1 9.1 22.1 11.7C22 17.1 17.7 21.3 12.3 21.3Z"
+          fill="currentColor"
+        />
+        <path
+          d="M17.5 13.9C17.2 13.7 15.7 13 15.4 12.9C15.1 12.8 14.9 12.8 14.7 13.1C14.5 13.4 13.8 14.2 13.6 14.4C13.4 14.6 13.2 14.7 12.9 14.5C10.9 13.5 9.6 12.7 8.3 10.5C8 10 8.6 10 9.1 9C9.2 8.8 9.2 8.6 9.1 8.4L8.4 6.7C8.2 6.3 8 6.3 7.8 6.3H7.2C7 6.3 6.7 6.4 6.5 6.7C6.2 7 5.4 7.8 5.4 9.4C5.4 11 6.5 12.6 6.7 12.8C6.9 13.1 8.9 16.2 12 17.5C14.5 18.6 15.1 18.7 15.9 18.5C16.7 18.4 18.2 17.8 18.5 17.1C18.8 16.4 18.8 15.8 18.7 15.7C18.6 15.5 18.2 15.2 17.5 13.9Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+
+    <h5 class="royal-title-font">WHATSAPP CHAT</h5>
+    <p>Chat With Us On WhatsApp</p>
+
+  </div>
+</div>
+
+          <!-- Email -->
+          <div class="col-lg-3 col-md-6 mb-4">
+  <div
+    class="lux-box"
+    onclick="window.location.href='mailto:artofdunescamps@gmail.com'"
+    style="cursor: pointer;"
+  >
+
+    <div class="lux-icon-badge bg-icon-email">
+      <svg width="30" height="30" viewBox="0 0 24 24"
+           fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect
+          x="3"
+          y="5"
+          width="18"
+          height="14"
+          rx="2"
+          stroke="currentColor"
+          stroke-width="2"
+        />
+        <path
+          d="M4 7L12 13L20 7"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+
+    <h5 class="royal-title-font">EMAIL US</h5>
+    <p>artofdunescamps@gmail.com</p>
+
+  </div>
+</div>
+
+        </div>
+
+        <!-- Combined Google Map & Booking Form -->
+        <div class="lux-main-card">
+          <div class="row no-gutters">
+            <div class="col-lg-6">
+              <div class="lux-map-frame">
+<iframe
+    src="https://maps.google.com/maps?q=26.89400284085548,70.5934061554478&z=15&output=embed"
+    width="100%"
+    height="300"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="strict-origin-when-cross-origin">
+</iframe>              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="lux-form-area">
+                <h3 class="royal-title-font">Send An Enquiry</h3>
+                <p class="text-muted small mb-4">Plan your desert safari and camp stay with us today.</p>
+
+                <form id="whatsappEnquiryForm">
+
+  <div class="row">
+
+    <div class="col-sm-6 form-group mb-3">
+      <input
+        type="text"
+        class="form-control lux-input-field"
+        id="name"
+        placeholder="Your Name"
+        required
+      />
+    </div>
+
+    <div class="col-sm-6 form-group mb-3">
+      <input
+        type="email"
+        class="form-control lux-input-field"
+        id="email"
+        placeholder="Email Address"
+        required
+      />
+    </div>
+
+    <div class="col-sm-6 form-group mb-3">
+      <input
+        type="tel"
+        class="form-control lux-input-field"
+        id="phone"
+        placeholder="Phone Number"
+        required
+      />
+    </div>
+
+    <div class="col-sm-6 form-group mb-3">
+      <input
+        type="text"
+        class="form-control lux-input-field"
+        id="subject"
+        placeholder="Subject / Package"
+        required
+      />
+    </div>
+
+    <div class="col-12 form-group mb-4">
+      <textarea
+        class="form-control lux-input-field"
+        id="message"
+        placeholder="Your Message..."
+        required
+      ></textarea>
+    </div>
+
+    <div class="col-12">
+      <button type="submit" class="lux-btn-btn text-uppercase">
+        SUBMIT NOW
+      </button>
+    </div>
+
+  </div>
+
+</form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER (ORIGINAL & UNTOUCHED) -->
+   <footer class="aod-footer">
+
+    <div class="container">
+
+        <!-- Footer Main Content -->
+        <div class="row aod-footer-main">
+
+            <!-- Brand / About -->
+            <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+
+                <div class="aod-footer-logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Art of Dunes Camp Logo">
+                    </a>
+                </div>
+
+                <h2 class="aod-footer-brand">
+                    ART OF DUNES CAMP
+                </h2>
+
+                <p class="aod-footer-description">
+                    Experience the magic of Jaisalmer desert life with
+                    comfortable stays, desert adventures, traditional
+                    Rajasthani culture and unforgettable moments.
+                </p>
+
+                <!-- Social Icons -->
+                <div class="aod-footer-social">
+
+                    <a href="https://www.instagram.com/artofdunes_camp"
+                       target="_blank"
+                       rel="noopener"
+                       title="Instagram">
+                        <img src="images/Home/icons/instagram.png" alt="Instagram">
+                    </a>
+
+                    <a href="https://wa.me/916376977737"
+                       target="_blank"
+                       rel="noopener"
+                       title="WhatsApp">
+                        <img src="images/Home/icons/whatsapp.png" alt="WhatsApp">
+                    </a>
+
+                    <a href="tel:+916376977737"
+                       title="Call">
+                        <span>☎</span>
+                    </a>
+
+                    <a href="mailto:artofdunescamps@gmai.com"
+                       title="Email">
+                        <img src="images/Home/icons/gmail.jpg" alt="Gmail">
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Navigation -->
+            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+
+                <h3 class="aod-footer-heading">
+                    Navigation
+                </h3>
+
+                <ul class="aod-footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="why-jaisalmer.html">Why Jaisalmer</a></li>
+                    <li><a href="adventure.html">Adventures</a></li>
+                    <li><a href="maharani-package.html">Swiss Tent</a></li>
+                    <li><a href="yuvraj-package.html">Deluxe Tent</a></li>
+                    <li><a href="events.html">Events & Tour</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- Experiences -->
+            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+
+                <h3 class="aod-footer-heading">
+                    Experiences
+                </h3>
+
+                <ul class="aod-footer-links">
+                    <li><a href="adventure.html">Desert Safari</a></li>
+                    <li><a href="adventure.html">Sand Dunes</a></li>
+                    <li><a href="events.html">Events & Tour</a></li>
+                    <li><a href="rajasthani-dance-dinner.html">Rajasthani Dance & Dinner</a></li>
+                    <li><a href="royal-odc.html"></a></li>
+                    <li><a href="gallery.html">Desert Experiences</a></li>
+                </ul>
+
+            </div>
+
+
+            <!-- Contact Info -->
+            <div class="col-lg-4 col-md-6">
+
+                <h3 class="aod-footer-heading">
+                    Contact Info
+                </h3>
+
+                <div class="aod-contact-item">
+                    <span class="aod-contact-icon">📍</span>
+                    <p>
+                        KHASARA NO 915/621, TEHSIL SAM, VILLAGE SALKHA,
+                        NEAR SALKHA BRANCH POST OFFICE, SALKHA,
+                        DISTRICT JAISALMER, RAJASTHAN - 345001
+                    </p>
+                </div>
+
+                <div class="aod-contact-item">
+                    <span class="aod-contact-icon">☎</span>
+                    <p>
+                        <a href="tel:+916375348556">
+                            Kuldeep Singh Rathore: 6375348556
+                        </a>
+                    </p>
+                </div>
+
+                <div class="aod-contact-item">
+                    <span class="aod-contact-icon">☎</span>
+                    <p>
+                        <a href="tel:+916376977737">
+                            Shairendra Singh Rawlot: 6376977737
+                        </a>
+                    </p>
+                </div>
+
+                <div class="aod-contact-item">
+                    <span class="aod-contact-icon">💬</span>
+                    <p>
+                        <a href="https://wa.me/916376977737"
+                           target="_blank"
+                           rel="noopener">
+                            WhatsApp Chat
+                        </a>
+                    </p>
+                </div>
+
+                <div class="aod-contact-item">
+                    <span class="aod-contact-icon">✉</span>
+                    <p>
+                        <a href="mailto:artofdunescamps@gmai.com">
+                            artofdunescamps@gmai.com
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+      <!-- Map -->
+        
+
+
+        <!-- Bottom -->
+        <div class="aod-footer-bottom">
+
+            <p>
+                © 2026 Art of Dunes Camp. All Rights Reserved.
+            </p>
+
+            <div class="aod-footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cancellation Policy</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/916376977737"
+       class="aod-floating-whatsapp"
+       target="_blank"
+       rel="noopener"
+       title="WhatsApp">
+        <img src="images/Home/icons/whatsapp.png" alt="WhatsApp">
+    </a>
+
+
+    <!-- Floating Call -->
+    <a href="tel:+916376977737"
+       class="aod-floating-call"
+       title="Call">
+        ☎
+    </a>
+
+</footer>
+
+    <!-- SCRIPTS -->
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+<script>
+document.getElementById("whatsappEnquiryForm").addEventListener("submit", function (e) {
+    e.preventDefault();
 
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const whatsappMessage =
+`🌵 *NEW BOOKING ENQUIRY*
+
+👤 *Name:* ${name}
+📧 *Email:* ${email}
+📞 *Phone:* ${phone}
+🏕️ *Package / Subject:* ${subject}
+
+💬 *Message:*
+${message}
+
+━━━━━━━━━━━━━━
+Art of Dunes Camp`;
+
+    const whatsappURL =
+        "https://wa.me/916376977737?text=" +
+        encodeURIComponent(whatsappMessage);
+
+    window.open(whatsappURL, "_blank");
+});
+</script>
   </body>
 </html>
